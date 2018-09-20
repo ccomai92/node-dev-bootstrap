@@ -56,10 +56,24 @@ will fail in the shared 'app' directory.
 The best workaround for this is to install node packages in your
 shared folder with the --no-bin-links flag, e.g.
 
-    npm install express --no-bin-links
+    npm install express@3 --no-bin-links
 
 If VirtualBox is your provider and you're using MacOS, you may also
 want to try to uncomment the "setextradata" customization in the
 VagrantFile to allow symlinks to work.
 
 I'm not sure how this affects other Virtual Machine providers.
+
+
+package.json setting
+
+{
+    "name": "",
+    "description": "", 
+    "version": "0.0.1", 
+    "dependencies": {
+        "mongoose": "3.6.x"
+        "express": "3.x"
+    }
+}
+
